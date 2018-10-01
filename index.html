@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  	<head>
+  		<meta charset="utf-8">
+  		<title>Wikipedia Viewer</title>
+
+  		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<link rel="stylesheet" type="text/css" href="css/styles.css">
+        
+        
+  	</head>
+  	<body>
+        
+        <div class="jumbotron text-center" id="header">
+            <h1>WikiViewer</h1>
+            
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <form id="search-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control user-input-hidden" id="user-input">
+                        </div>
+                    </form>
+                
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            
+            
+            
+            <div class="row" id="buttons-wrapper">
+                <div class="col-md-4"></div>
+                
+                <div class="text-center col-md-2">
+                    <div id="search" class="buttons">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+                  <div class="text-center col-md-2">
+                      <div id="random" class="buttons">
+                      <i class="fa fa-random" aria-hidden="true"></i>
+                          </div>
+                  </div>    
+                </a>
+                    
+                <div class="col-md-4"></div>
+            
+            </div>
+            
+           
+            
+        </div>
+  		
+  		<div id="content-wrapper">
+            
+            <div class="row offset">
+                
+                <div class="col-md-3"></div>
+                
+                <div class="col-md-6">
+                    <div class="content-row info">
+                      <h2> Press the <i class="fa fa-search" aria-hidden="true"></i> icon to search for something specific or the <i class="fa fa-random" aria-hidden="true"></i> icon to get a random article</h2>
+                    </div>
+                
+                    
+                    
+                </div>
+                
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+        
+  		
+  		<div id="results"></div>
+
+  		<script type="text/javascript" src='js/script.js'></script>
+  	</body>
+
+</html>
